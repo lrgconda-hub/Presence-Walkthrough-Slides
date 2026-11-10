@@ -1,1 +1,195 @@
-
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Presence · Museum Walkthrough</title>
+<meta name="description" content="A six-slide walkthrough of Presence, a walk-in digital museum of Philippine popular culture by Group 7, H1104.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Jost:wght@400;500;600&display=swap">
+<style>
+html,body{margin:0;height:100%;background:#120a0e;overflow:hidden;font-family:Jost,Arial,sans-serif}
+#stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#deck{position:relative;width:1920px;height:1080px;transform-origin:center center;flex:none}
+#deck>section{position:absolute;inset:0;box-sizing:border-box;width:1920px;height:1080px;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .35s ease}
+#deck>section.on{opacity:1;visibility:visible}
+#deck h1,#deck h2,#deck h3,#deck p{margin:0}
+#deck aside{display:none}
+#deck img{display:block}
+.ui{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:10px;align-items:center;background:rgba(29,17,22,.82);color:#f7efe6;padding:8px 12px;border-radius:999px;font:500 15px Jost,Arial,sans-serif;z-index:5;transition:opacity .4s}
+.ui button{all:unset;cursor:pointer;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#f2c14e;color:#1d1116;font-size:20px;font-weight:600}
+.ui button:focus-visible{outline:3px solid #ec5f9f;outline-offset:2px}
+.ui a{color:#f2c14e;text-decoration:none;padding:0 6px}
+#notes{position:fixed;left:16px;right:16px;bottom:76px;max-width:900px;margin:0 auto;background:rgba(247,239,230,.96);color:#1d1116;padding:16px 20px;border-radius:14px;font:400 18px/1.5 Jost,Arial,sans-serif;display:none;z-index:6}
+body.idle .ui{opacity:0}
+@media (prefers-reduced-motion:reduce){#deck>section{transition:none}}
+</style></head><body>
+<div id="stage"><div id="deck">
+<section id="cover" data-transition="fade" style="background:#1d1116;color:#f7efe6;font-family:Jost, Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:end;gap:24px">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/entrance.jpg" alt="The Presence mall at dusk: a glass dome, a neon PRESENCE sign and purple banners" style="position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:linear-gradient(90deg, rgba(29,17,22,0.94) 0%, rgba(29,17,22,0.78) 42%, rgba(29,17,22,0.15) 100%)"></div>
+<p style="font-size:28px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:#f2c14e">Final museum walkthrough</p>
+<h1 style="font-family:'Playfair Display', Georgia, serif;font-size:180px;font-weight:700;line-height:1;color:#f7efe6">Presence</h1>
+<p style="font-size:44px;line-height:1.3;color:#f7efe6;width:980px">A walk-in digital museum of Philippine popular culture, 2000 to 2030</p>
+<p style="font-size:28px;color:#e9dccf">Philippine Popular Culture · Section H1104 · Group 7</p>
+<p style="font-size:26px;color:#f2c14e">mohum080tasubmissionh1104group7.vercel.app</p>
+<aside>Welcome to Presence, a digital museum of Philippine popular culture built as a department store. In the 2000s the mall became the Filipino plaza, so that is where we put our museum. [Open the live site and click Enter the Museum.]</aside>
+</section>
+<section id="how" data-transition="fade" style="background:#f7efe6;color:#1d1116;font-family:Jost, Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:#a8327a">How the museum works</p>
+<h2 style="font-family:'Playfair Display', Georgia, serif;font-size:80px;font-weight:700;line-height:1.1;color:#1d1116">Three floors, three eras, one store</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#1d1116;padding:48px;border-radius:20px;border-top:12px solid #f2c14e">
+<p style="font-family:'Playfair Display', Georgia, serif;font-size:96px;font-weight:700;line-height:1;color:#f2c14e">GF</p>
+<h3 style="font-size:44px;font-weight:600;color:#f7efe6">2000–2010</h3>
+<p style="font-size:30px;color:#e9dccf">The Original Experience</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#1d1116;padding:48px;border-radius:20px;border-top:12px solid #ec5f9f">
+<p style="font-family:'Playfair Display', Georgia, serif;font-size:96px;font-weight:700;line-height:1;color:#ec5f9f">2F</p>
+<h3 style="font-size:44px;font-weight:600;color:#f7efe6">Present</h3>
+<p style="font-size:30px;color:#e9dccf">The Connected Experience</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#1d1116;padding:48px;border-radius:20px;border-top:12px solid #5b97f2">
+<p style="font-family:'Playfair Display', Georgia, serif;font-size:96px;font-weight:700;line-height:1;color:#5b97f2">3F</p>
+<h3 style="font-size:44px;font-weight:600;color:#f7efe6">2030</h3>
+<p style="font-size:30px;color:#e9dccf">The Evolving Experience</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-size:34px;line-height:1.4;color:#1d1116"><b>Every floor:</b> Affect · Body &amp; Self-Image · Performance</p>
+<p style="font-size:34px;line-height:1.4;color:#4a3a42">Each display stays in the same spot on every floor. Only the object changes: Nokia → smartphone → AI wearable.</p>
+</div>
+<aside>Each floor is an era: the Ground Floor is 2000 to 2010, the Second Floor is the present, and the Third Floor is 2030. Every floor has the same three departments: Affect, Body and Self-Image, and Performance. Each display sits in the same spot on every floor, so you can see what stayed the same and what changed. Walk with W A S D, press E to open a stall, Esc to close.</aside>
+</section>
+<section id="gf" data-transition="fade" style="background:#1d1116;color:#f7efe6;font-family:Jost, Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:#f2c14e">Ground Floor · 2000–2010</p>
+<h2 style="font-family:'Playfair Display', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#f7efe6">The Original Experience</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-affect-3.jpg" alt="F4 Meteor Garden soundtrack CD with a Kilig Soundtrack note" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#f2c14e">Affect</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">Kilig Asianovelas</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">Meteor Garden and Lovers in Paris made kilig a national feeling.</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-body-1.jpg" alt="Belo Dermlight skin whitening ad" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#f2c14e">Body &amp; Self-Image</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">GLOW: Fairer in 7 Days</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">Belo and whitening soap made fairness something you could buy.</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-performance-2.jpg" alt="Star for a Night grand finals cover with Regine Velasquez" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#f2c14e">Performance</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">Talent Shows</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">Sarah Geronimo won Star for a Night: ordinary people became stars.</p>
+</div>
+</div>
+</div>
+<aside>Ground Floor, 2000 to 2010. Affect: Kilig Asianovelas. Meteor Garden and Lovers in Paris made kilig a national feeling, and Kitchie Nadal's theme song was hugot before the word existed. [Play the clip.] Body and Self-Image: GLOW. Belo made liposuction mainstream, and whitening soap made fairness something you could buy. Performance: Talent Shows. Ordinary people became stars; Sarah Geronimo won Star for a Night.</aside>
+</section>
+<section id="f2" data-transition="fade" style="background:#1d1116;color:#f7efe6;font-family:Jost, Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:#ec5f9f">Second Floor · Present</p>
+<h2 style="font-family:'Playfair Display', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#f7efe6">The Connected Experience</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-f2-affect-3.jpg" alt="Phone with Spotify open beside wireless earbuds" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#ec5f9f">Affect</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">The Kitchie Nadal Renaissance</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">The same 2000s songs came back as Gen Z TikTok trends.</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-f2-body-0.jpg" alt="The same selfie with no filter and with a beauty filter" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#ec5f9f">Body &amp; Self-Image</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">The Filter Issue</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">Filters set today’s beauty standard, and comparison hurts body image.</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-f2-performance-0.jpg" alt="Construction workers dancing the Pantropiko challenge" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#ec5f9f">Performance</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">Construction Crew Pantropiko</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">Anyone can perform for the feed: their cover drew over 4 million plays.</p>
+</div>
+</div>
+</div>
+<aside>[Ride the escalator up.] Second Floor, the present. Affect: The Kitchie Nadal Renaissance. The same songs came back as TikTok trends for Gen Z. [Play the TikTok.] Body and Self-Image: The Filter Issue. Filters now set the beauty standard, and comparison online hurts body image. Performance: Construction Crew Pantropiko. Anyone can perform for the feed; this crew's cover drew over 4 million plays.</aside>
+</section>
+<section id="f3" data-transition="fade" style="background:#1d1116;color:#f7efe6;font-family:Jost, Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:28px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:#5b97f2">Third Floor · 2030</p>
+<h2 style="font-family:'Playfair Display', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#f7efe6">The Evolving Experience</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-f3-affect-2.jpg" alt="AI mock-up of a phone playing a voice clip labelled Is this real?" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#5b97f2">Affect</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">Is This Real?</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">Deepfakes make people doubt even real recordings.</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-f3-body-0.jpg" alt="AI mock-up of a smart mirror showing then and now photos" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#5b97f2">Body &amp; Self-Image</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">Then vs. Now</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">A generation ages in public, measured against its own Friendster photos.</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2c1a22;border-radius:20px;overflow:hidden">
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/a-f3-performance-5.jpg" alt="AI mock-up of an audition card for Contestant 2030, an AI performer" style="width:533px;height:300px;object-fit:cover">
+<div style="display:flex;flex-direction:column;gap:10px;padding:16px 32px 36px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#5b97f2">Performance</p>
+<h3 style="font-size:40px;font-weight:600;line-height:1.15;color:#f7efe6">A Star with No Backstory</h3>
+<p style="font-size:26px;line-height:1.4;color:#e9dccf">Platforms made Charice. The next test: a star who isn’t a person.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;right:128px;bottom:56px;font-size:24px;color:#bfaeb6">3F images: AI-generated mock-ups · Group 7</p>
+<aside>[Ride up.] Third Floor, our prediction for 2030. Affect: Is This Real? Deepfakes make people doubt even real recordings. Body and Self-Image: Then vs. Now. The 2000s generation ages in public, compared against its own Friendster photos. Performance: A Star with No Backstory. Platforms made Charice a star; the next test is a star who isn't a person.</aside>
+</section>
+<section id="close" data-transition="fade" style="background:#f7efe6;color:#1d1116;font-family:Jost, Arial, sans-serif;padding:128px;display:flex;flex-direction:row;align-items:center;gap:80px">
+<div style="flex:1;display:flex;flex-direction:column;gap:36px">
+<p style="font-size:28px;font-weight:600;letter-spacing:6px;text-transform:uppercase;color:#a8327a">Our conclusion</p>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-size:34px;line-height:1.4;color:#4a3a42"><b style="color:#1d1116">2000s:</b> we reached for connection</p>
+<p style="font-size:34px;line-height:1.4;color:#4a3a42"><b style="color:#1d1116">2020s:</b> it became effortless</p>
+<p style="font-size:34px;line-height:1.4;color:#4a3a42"><b style="color:#1d1116">2030:</b> it becomes automated</p>
+</div>
+<h2 style="font-family:'Playfair Display', Georgia, serif;font-size:72px;font-weight:700;line-height:1.15;color:#1d1116">The question is no longer “Can I reach people?” but “Is this real?”</h2>
+<p style="font-size:28px;color:#4a3a42">Thank you for visiting Presence · mohum080tasubmissionh1104group7.vercel.app</p>
+</div>
+<img src="https://mohum080tasubmissionh1104group7.vercel.app/presence_files/checkout.jpg" alt="The Presence checkout counter" style="width:600px;height:760px;object-fit:cover;border-radius:24px">
+<aside>[Show the checkout receipt.] Every visit ends with a receipt of what you collected. The 2000s taught us to reach for connection, the 2020s made it effortless, and 2030 makes it automated. The question is no longer "Can I reach people?" but "Is this real?" Thank you for visiting Presence.</aside>
+</section>
+</div></div>
+<div id="notes" role="note" aria-live="polite"></div>
+<div class="ui" role="toolbar" aria-label="Slide controls">
+<button id="prev" aria-label="Previous slide">‹</button><span id="count" aria-live="polite">1 / 6</span><button id="next" aria-label="Next slide">›</button>
+<button id="nb" aria-label="Show speaker notes" style="width:auto;padding:0 14px;font-size:15px">Notes</button>
+<a href="https://mohum080tasubmissionh1104group7.vercel.app/?enter" target="_blank" rel="noopener">Open the museum ↗</a>
+</div>
+<script>
+const S=[...document.querySelectorAll('#deck>section')],deck=document.getElementById('deck'),cnt=document.getElementById('count'),notes=document.getElementById('notes');
+let i=Math.max(0,Math.min(S.length-1,(parseInt(location.hash.replace('#slide-',''))||1)-1)),showN=false;
+function fit(){const s=Math.min(innerWidth/1920,innerHeight/1080);deck.style.transform='scale('+s+')';}
+function show(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((s,k)=>{s.classList.toggle('on',k===i);s.setAttribute('aria-hidden',k!==i);});cnt.textContent=(i+1)+' / '+S.length;history.replaceState(null,'','#slide-'+(i+1));const a=S[i].querySelector('aside');notes.textContent=a?a.textContent:'';notes.style.display=showN&&a?'block':'none';}
+document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
+document.getElementById('nb').onclick=()=>{showN=!showN;document.getElementById('nb').setAttribute('aria-label',showN?'Hide speaker notes':'Show speaker notes');show(i);};
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1);}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1);}else if(e.key==='Home')show(0);else if(e.key==='End')show(S.length-1);else if(e.key==='n'||e.key==='N')document.getElementById('nb').click();else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.();}});
+let tx=null;addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(i+(dx<0?1:-1));tx=null;});
+let idle;addEventListener('mousemove',()=>{document.body.classList.remove('idle');clearTimeout(idle);idle=setTimeout(()=>document.body.classList.add('idle'),2500);});
+addEventListener('resize',fit);fit();show(i);
+</script></body></html>
